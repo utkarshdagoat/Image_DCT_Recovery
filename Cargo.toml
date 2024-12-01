@@ -1,5 +1,6 @@
 [workspace]
-members = [ "decoder",
+members = [ 
+    "decoder",
     "lib",
     "program",
     "script",

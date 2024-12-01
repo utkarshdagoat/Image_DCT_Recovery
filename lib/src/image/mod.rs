@@ -1,1 +1,2 @@
-mod transformations;
+pub mod image;
+pub mod transformations;

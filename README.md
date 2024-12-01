@@ -41,6 +41,7 @@ The process of transforming raw image data from camera sensors into a usable ima
   - Reconstruct the raw data into standard formats like PNG or JPEG.
   - The final image is ready for further processing or display.
 
+<img src="images/Raw Decoding.png">
 ---
 
 ### **2. ZK-SNARKs Proof Generation**

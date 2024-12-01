@@ -45,35 +45,11 @@ The process of transforming raw image data from camera sensors into a usable ima
 ---
 
 ### **2. ZK-SNARKs Proof Generation**
-Details forthcoming as this process involves cryptographic proof systems used for validating data integrity without revealing raw image data.
+Zk Snarks provide cryptographic guarnteee that an image has been transformed correctly. We use a recursive snark scheme. Inspired from [PhotoProof Assa Naveh and Eran Tromer](https://cs-people.bu.edu/tromer/papers/photoproof-oakland16.pdf)
+The following scheme is used
+<img src="images/zk_scheme.png">
 
----
-
-## **Why We Used Rust?**
-
-We selected Rust for its many advantages:
-
-- **Performance**:
-  - Comparable to C and C++, offering low-level memory management.
-  - Efficiently handles large raw image files without compromising speed.
-
-- **Memory Safety**:
-  - Guarantees memory safety without relying on garbage collection.
-  - Ensures stable handling of complex memory and data operations in image processing.
-
-- **Concurrency**:
-  - Leverages Rust's concurrency model for parallel processing of large-scale image tasks.
-  - Improves decoding speed and supports real-time processing.
-
-- **Error Handling**:
-  - Provides robust error handling with `Result` and `Option`.
-  - Makes it easier to manage potentially corrupted or unsupported raw files.
-
-- **Community and Libraries**:
-  - Rust's growing ecosystem offers efficient libraries for image processing and cryptographic operations.
-  - Facilitates building scalable tools like VeriPhoto.
-
----
+<img src="images/image.png">
 
 ## **Real-Life Use Cases**
 
@@ -83,17 +59,12 @@ We selected Rust for its many advantages:
 - **Digital Photography**:
   - Post-processing of raw photos for professional photographers.
 
-- **Surveillance Systems**:
-  - Enhance raw image handling in security and monitoring applications.
-
 - **Medical Imaging**:
   - Efficient decoding and processing of raw medical images like X-rays and MRIs.
 
 - **Scientific Research**:
-  - Process large volumes of raw astronomical or microscopic image data.
+  -An image in an journal is not forged for fields where dip is essential.
 
 - **Legal Evidence**:
   - Ensure the authenticity of digital image evidence in legal proceedings.
 
-- **Blockchain Applications**:
-  - Integrate ZK-SNARKs for proving image authenticity in decentralized systems.

@@ -126,6 +126,7 @@ const ImageProcessor = () => {
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                   <ImageCard title="Grayscale" src={image.urls.grayscale} />
+                  
                   <ArrowRight className="hidden md:block mx-auto h-6 w-6 text-muted-foreground" />
                   <ImageCard title="Corrupted" src={image.urls.corrupted} />
                   <ArrowRight className="hidden md:block mx-auto h-6 w-6 text-muted-foreground" />
@@ -150,6 +151,7 @@ const ImageCard = ({ title, src }: { title: string; src: string }) => (
         className="w-full h-48 object-cover"
         loading="lazy"
       />
+      <div>Go here if does not render {src}</div>
     </div>
   </div>
 );

@@ -151,7 +151,6 @@ const ImageCard = ({ title, src }: { title: string; src: string }) => (
         className="w-full h-48 object-cover"
         loading="lazy"
       />
-      <div>Go here if does not render {src}</div>
     </div>
   </div>
 );
